@@ -1,0 +1,81 @@
+:root {
+    --bs-primary-rgb: 67, 97, 238;
+    --bs-primary-bg-subtle: rgba(67, 97, 238, 0.1);
+}
+
+/* Custom upload area */
+.upload-area {
+    background-color: var(--bs-primary-bg-subtle);
+    border-color: var(--bs-primary);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.15);
+}
+
+/* Custom card styling */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Custom progress bar */
+.progress {
+    overflow: visible;
+}
+
+.progress-bar {
+    position: relative;
+    overflow: visible;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: -2px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--bs-primary);
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem !important;
+    }
+}
+.progress-container {
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress {
+    height: 20px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    font-size: 0.9rem;
+}
